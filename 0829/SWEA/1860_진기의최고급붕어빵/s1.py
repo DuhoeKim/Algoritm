@@ -8,7 +8,7 @@ for test_case in range(1, T+1):
     N, M, K = map(int, input().split())
 
     coming_time = list(map(int, input().split()))           # 손님오는 시간 입력
-    coming_time.sort(reverse=1)                                      # 시간 순서로 정렬
+    coming_time.sort(reverse=1)                             # 시간 역순으로 정렬
 
     result = 'Possible'                                     # 결과 초기화
 
@@ -19,5 +19,5 @@ for test_case in range(1, T+1):
         if fish_bun < 0:                                    # 남은 붕어빵 수가 음수면
             result = 'Impossible'                           # 불가능!
             break                                           # 순회 멈춰!
-    answer.append('#{} {}'.format(test_case, result))
-print('\n'.join(answer))
+    answer.append('#{} {}'.format(test_case, result))       # 정답모으기
+print('\n'.join(answer))                                    # 모은 정답 한번에 출력
