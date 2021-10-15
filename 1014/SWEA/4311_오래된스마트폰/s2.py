@@ -54,13 +54,13 @@ for test_case in range(1, T+1):
     touch_list = []
     comb('')
 
-    checked = [987654321]*1000
+    checked = [M]*1000
 
-    result = 987654321
+    result = 21
     for num in touch_list:
         DFS(num, len(num))
 
-    if result == 987654321:
+    if result == 21:
         result = -1
 
     print('#%d %d'%(test_case, result))
